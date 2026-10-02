@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <header class="toolbar">
+      <div class="problem-meta">
+        <span class="problem-title">Two Sum</span>
+        <span class="badge easy">Easy</span>
+      </div>
+      <button id="run-btn">&#9654; Run Tests</button>
+    </header>
+
+    <details class="problem-panel">
+      <summary>Problem Description</summary>
+      <div class="problem-body">
+        <p>
+          Given an array of integers <code>nums</code> and an integer <code>target</code>,
+          return the <strong>indices</strong> of the two numbers that add up to <code>target</code>.
+          You may assume each input has exactly one solution, and you may not use the same element twice.
+        </p>
+        <h4>Example 1</h4>
+        <pre>Input:  nums = [2, 7, 11, 15], target = 9
+Output: [0, 1]
+Reason: nums[0] + nums[1] = 2 + 7 = 9</pre>
+        <h4>Example 2</h4>
+        <pre>Input:  nums = [3, 2, 4], target = 6
+Output: [1, 2]</pre>
+        <h4>Constraints</h4>
+        <ul>
+          <li>2 &le; nums.length &le; 10<sup>4</sup></li>
+          <li>&minus;10<sup>9</sup> &le; nums[i] &le; 10<sup>9</sup></li>
+          <li>Exactly one valid answer exists</li>
+        </ul>
+      </div>
+    </details>
+
+    <div class="progress-row" id="progress-row">
+      <div class="progress-track">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <span class="progress-text" id="progress-text"></span>
+    </div>
+
+    <div class="results" id="results">
+      <div class="idle-msg">Press <strong>Run Tests</strong> to begin.</div>
+    </div>
+
+    <div class="summary hidden" id="summary"></div>
+
+  </div>
+
+  <script src="runner.js"></script>
+  <script src="solution.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>
